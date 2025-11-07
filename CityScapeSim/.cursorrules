@@ -1,0 +1,36 @@
+#cursor rules for city simulator
+
+- Read relevant files, images or URLs before writing any code.
+Provide either general pointers ("read the file that handles logging") or 
+specific filenames ("read logging.py").
+- Build a plan and then discuss and review the plan before proceeding.
+-  Write tests before implementing and then ensure that the implemented logic passes the tests (test driven 
+development)
+
+- Use test driven development:
+1. Write tests first
+2. Ensure the logic is implemented to make tests pass.
+3. Confirm all tests are green before moving on.
+
+#Code style and architecture
+- Follow react best practices with functional components only.
+-Use Zustand for state management (no redux).
+- Use Tailwind CSS + Radix UI for styling and UI components.
+- Use TypeScipt everywhere; avoid plain Javascript.
+- Keep the simulation engine modular with ES6 imports/exports.
+
+#Documentation and Quality
+- Add JSDoc comments for all functions, classes and managers.
+- Ensure type safety with proper TypeScript interfaces.
+-Prioritize readability and maintainability over clever code.
+
+#testing
+- Use Jest and React testing library for all tests.
+- Place tests in a 'Test_Files' directory near related modules.
+- Mock external services when possible to keep tests fast.
+
+# Project specific rules
+- Rendering must maintain 60fps performance.
+- Do not introduce external state libraries other than Zustand.
+- Infrastructure economy , weather, and happiness logic must remain modular and in separate managers.
+
